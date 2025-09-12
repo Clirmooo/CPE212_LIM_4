@@ -1,0 +1,14 @@
+[dbserver]
+192.168.56.111
+[workstation]
+192.168.56.112
+192.168.56.110
+192.168.56.114
+[webserver]
+192.168.56.112
+192.168.56.110
+192.168.56.114
+[CentOS]
+192.168.56.114 ansible_user=justinlim ansible_ssh_private_key_file=~/.ssh/id_rsa 
+
+
