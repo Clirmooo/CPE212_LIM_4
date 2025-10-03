@@ -1,12 +1,8 @@
 ---
-- hosts: ubuntu
+- hosts: all
   become: true
   tasks:
 
-  - name: Installing Mariadb
+  - name: install apache2 package
     apt:
-       name: mariadb-server
-    when: ansible_distribution = "Ubuntu"
-  - name: Ping
-    ansible.builtin.ping:
-    
+      name: apache2    
